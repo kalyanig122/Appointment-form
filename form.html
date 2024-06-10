@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Appointment form</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="./css/styles.css"> -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url('./img/doctor-examining-his-young-patient_1098-2162.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: top;
+      font-family: "poppins", sans-serif;
+      font-size: 14px;
+      position: relative;
+    }
+    .screw{
+      position: fixed;
+      top: 0;
+      right: 0;
+    }
+    .spinner{
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 200px;
+      height: auto;
+      background-color: #fff;
+      /* display: none; */
+    }
+    .theme-div{
+      border: 1px solid black;
+      background: rgb(250, 158, 158);
+    
+      font-size: 14px;
+    }
+    .plus-sign{
+     margin-left: 5px;
+    margin-right: 7px;
+    }
+    .resetbtn{
+      width: 100%;
+      font-size: 16px;
+      font-weight: 400;
+    }
+
+    .form-container {
+      margin-top: 200px;
+      width: 45%;
+      height: auto;
+      background-color: rgba(9, 8, 8, 0.7);
+      color: #fff;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      text-align: center;
+      margin: 5px 0px;
+    }
+
+    .underline {
+      width: 250px;
+      margin: auto;
+      height: 1px;
+      background-color: #fff;
+      margin-bottom: 20px;
+      
+    }
+   
+
+    .form {
+      
+      margin-bottom: 30px;
+
+    }
+
+    .box-1 {
+      display: flex;
+    }
+
+    .Astric {
+      color: red;
+      font-size: 1rem;
+      margin: 0 15px;
+    }
+
+    .colon {
+      font-size: 1rem;
+      margin-right: 30px;
+      margin-left: 110px;
+    }
+
+    .colon-2 {
+      font-size: 1rem;
+      margin-right: 30px;
+      margin-left: 152px;
+    }
+
+    input,
+    select,
+    textarea {
+      border-radius: 2px;
+      border: none;
+      height: 30px;
+
+
+    }
+    
+
+    .labels {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+    }
+    .inputs{
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .box-2 {
+      display: flex;
+    }
+    .dropdown{
+      width: 300px;
+    }
+
+    .book-now {
+     margin: 15px 35%;
+      width: 150px;
+      height: 40px;
+      border: none;
+      background-color: rgb(25, 109, 211);
+      color: #fff;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <a href="" class="screw"><img src="./img/facebook (3).png" alt=""></a>
+  <div class="spinner">
+    <span style="margin-left: 20px; font-weight: 400; font-size: 16px; line-height: 40px;">Style Switcher</span>
+    <div class="theme-div"><span class="plus-sign">+</span><span>Apply Theme</span></div>
+    <div class="theme-div"><span class="plus-sign">+</span><span>Input Theme</span></div>
+    <div class="theme-div"><span class="plus-sign">+</span><span>Label Theme</span></div>
+    <div class="theme-div"><span class="plus-sign">+</span><span>Background Image</span></div>
+    <div class="theme-div"><span class="plus-sign">+</span><span>Add Background Color</span></div>
+    <div><button type="reset" class="resetbtn">Reset All</button></div>
+  </div>
+  <div class="form-container">
+    <h2>Doctor Appointment</h2>
+    <div class="underline"></div>
+    <form action="" class="form">
+      <div class="box-1">
+        <div class="labels">
+          <label for="" style="margin-left: 15px;">Are You Existing Patient ?</label>
+          <div> <span class="Astric">*</span><label for="">Suffix</label></div>
+          <div> <span class="Astric">*</span><label for="">Name</label></div>
+          <div> <span class="Astric">*</span><label for="">Age</label></div>
+          <div> <Span class="Astric">*</Span><label for="">Mobile Number</label></div>
+          <div><Span class="Astric">*</Span><label for="">Aditional Details</label></div>
+        </div>
+        <div class="inputs">
+          <div><span class="colon">:</span><select name="" id="">
+              <option value="no">No</option>
+              <option value="yes">Yes</option>
+            </select></div>
+          <div><span class="colon">:</span><select name="" id="">
+              <option value="mr.">Mr.</option>
+              <option value="mrs.">Mrs.</option>
+              <option value="miss.">Miss.</option>
+              <option value="ms.">Ms.</option>
+            </select></div>
+          <div><span class="colon">:</span><input type="text" placeholder="Your Name" class="dropdown" required></div>
+          <div><span class="colon">:</span><input type="text" placeholder="Your Age" style="width: 80px;" required>
+            <span class="Astric">*</span><label for="" style="margin-right: 10px;">Gender</label><select name="" id="">
+              <option value="Select Gender">Select Gender</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">other</option>
+            </select>
+          </div>
+          <div><span class="colon">:</span><select name="" id="">
+              <option value="+91">+91</option>
+              <option value="+81">+81</option>
+            </select><input type="number" placeholder="Your Mobile Number"  style="margin-left: 10px; width: 250px;" required>
+          </div>
+          <div><span class="colon">:</span>
+            <textarea name="" id="" placeholder="Additional details, for example : Your Health Query" style="width: 300px; height: 100px;"></textarea>
+          </div>
+
+        </div>
+      </div>
+      <!-- <div class="full-underline"></div> -->
+      <hr>
+      <div class="box-2">
+        <div class="labels">
+          <div><span class="Astric">*</span><label for="">Location</label></div>
+          <div><span class="Astric">*</span><label for="">Speciality</label></div>
+          <div><span class="Astric">*</span><label for="">Doctor</label></div>
+          <div><span class="Astric">*</span><label for="">Available Date</label></div>
+          <div><span class="Astric">*</span><label for="">Available Slots</label></div>
+        </div>
+        <div class="inputs">
+          <div><span class="colon-2">:</span><select name="" id="" class="dropdown">
+              <option value="choose location">Choose Location</option>
+              <option value="nanded">Nanded</option>
+              <option value="latur">Latur</option>
+              <option value="nagpur">Nagpur</option>
+              <option value="pune">Pune</option>
+            </select></div>
+          <div><span class="colon-2">:</span><select name="" id="" class="dropdown">
+              <option value="choose speciality">Choose Speciality</option>
+              <option value="a">A</option>
+              <option value="b">B</option>
+              <option value="c">C</option>
+              <option value="d">D</option>
+            </select></div>
+          <div><span class="colon-2">:</span><select name="" id="" class="dropdown">
+              <option value="choose doctor">Choose Doctor</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select></div>
+          <div><span class="colon-2">:</span><select name="" id="" class="dropdown">
+              <option value="dd/mm/yyyy">DD/MM/YYYY</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+            </select></div>
+          <div><span class="colon-2">:</span><select name="" id="" class="dropdown">
+              <option value="available slots">Available Slots</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+            </select></div>
+        </div>
+      </div>
+
+    </form>
+    <button type="submit" class="book-now"> Book Now</button>
+  </div>
+<script src="./js/script.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
